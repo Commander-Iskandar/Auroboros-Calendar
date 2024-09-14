@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auroboros Campaign Calendar</title>
+    <title>Fantasy Calendar - Auroboros</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,11 +24,23 @@
             grid-template-columns: repeat(9, 1fr); /* 9 days in a week */
             gap: 5px;
         }
-        .day-header, .day {
+        .day-header {
+            background-color: #cccccc; /* Grey color for the top row */
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .day {
             background-color: #fff;
             border: 1px solid #ccc;
             padding: 10px;
             text-align: center;
+        }
+        .current-day {
+            background-color: #87CEEB; /* Light blue for the current day */
+            border: 2px solid #4682B4; /* Darker blue border */
+            color: white;
         }
         .empty-day {
             visibility: hidden;
