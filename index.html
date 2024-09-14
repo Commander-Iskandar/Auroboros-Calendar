@@ -24,11 +24,14 @@
             grid-template-columns: repeat(9, 1fr); /* 9 days in a week */
             gap: 5px;
         }
-        .day {
+        .day-header, .day {
             background-color: #fff;
             border: 1px solid #ccc;
             padding: 10px;
             text-align: center;
+        }
+        .empty-day {
+            visibility: hidden;
         }
         .moon-phase {
             margin-top: 10px;
@@ -44,131 +47,97 @@
     <div class="calendar">
         <!-- Month 1: Solvann -->
         <div class="month">
-            <h2>Solvann (46 days)</h2>
+            <h2>Solvann (57 days)</h2>
             <div class="days">
+                <!-- Days of the week -->
+                <div class="day-header">Sundahs</div>
+                <div class="day-header">Morndahs</div>
+                <div class="day-header">Tundahs</div>
+                <div class="day-header">Wendahs</div>
+                <div class="day-header">Thirndahs</div>
+                <div class="day-header">Frendahs</div>
+                <div class="day-header">Brundahs</div>
+                <div class="day-header">Vendahs</div>
+                <div class="day-header">Endahs</div>
+
                 <!-- Days of the month -->
-                <!-- Week 1 -->
-                <div class="day">1 Solvann</div>
-                <div class="day">2 Solvann</div>
-                <div class="day">3 Solvann</div>
-                <div class="day">4 Solvann</div>
-                <div class="day">5 Solvann</div>
-                <div class="day">6 Solvann</div>
-                <div class="day">7 Solvann</div>
-                <div class="day">8 Solvann</div>
-                <div class="day">9 Solvann</div>
+                <!-- Empty cells if the month doesn't start on Sundahs -->
+                <div class="empty-day"></div> <!-- Offset start (example) -->
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
 
-                <!-- Week 2 -->
-                <div class="day">10 Solvann</div>
-                <div class="day">11 Solvann</div>
-                <div class="day">12 Solvann</div>
-                <div class="day">13 Solvann</div>
-                <div class="day">14 Solvann</div>
-                <div class="day">15 Solvann</div>
-                <div class="day">16 Solvann</div>
-                <div class="day">17 Solvann</div>
-                <div class="day">18 Solvann</div>
+                <!-- Continue filling in days -->
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
 
-                <!-- Week 3 -->
-                <div class="day">19 Solvann</div>
-                <div class="day">20 Solvann</div>
-                <div class="day">21 Solvann</div>
-                <div class="day">22 Solvann</div>
-                <div class="day">23 Solvann</div>
-                <div class="day">24 Solvann</div>
-                <div class="day">25 Solvann</div>
-                <div class="day">26 Solvann</div>
-                <div class="day">27 Solvann</div>
-
-                <!-- Week 4 -->
-                <div class="day">28 Solvann</div>
-                <div class="day">29 Solvann</div>
-                <div class="day">30 Solvann</div>
-                <div class="day">31 Solvann</div>
-                <div class="day">32 Solvann</div>
-                <div class="day">33 Solvann</div>
-                <div class="day">34 Solvann</div>
-                <div class="day">35 Solvann</div>
-                <div class="day">36 Solvann</div>
-
-                <!-- Week 5 -->
-                <div class="day">37 Solvann</div>
-                <div class="day">38 Solvann</div>
-                <div class="day">39 Solvann</div>
-                <div class="day">40 Solvann</div>
-                <div class="day">41 Solvann</div>
-                <div class="day">42 Solvann</div>
-                <div class="day">43 Solvann</div>
-                <div class="day">44 Solvann</div>
-                <div class="day">45 Solvann</div>
-                <div class="day">46 Solvann</div>
+                <!-- Continue for all 57 days of Solvann -->
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <!-- Repeat until -->
+                <div class="day">57</div>
             </div>
             <div class="moon-phase">Moon Selanna (17-day cycle)</div>
         </div>
 
         <!-- Month 2: Drekaris -->
         <div class="month">
-            <h2>Drekaris (46 days)</h2>
+            <h2>Drekaris (57 days)</h2>
             <div class="days">
-                <!-- Similar structure for Drekaris -->
-                <!-- Repeat the same blocks as Solvann for each week (1 Drekaris, 2 Drekaris, etc.) -->
-                <div class="day">1 Drekaris</div>
-                <!-- Fill in the days up to 46 -->
+                <!-- Days of the week -->
+                <div class="day-header">Sundahs</div>
+                <div class="day-header">Morndahs</div>
+                <div class="day-header">Tundahs</div>
+                <div class="day-header">Wendahs</div>
+                <div class="day-header">Thirndahs</div>
+                <div class="day-header">Frendahs</div>
+                <div class="day-header">Brundahs</div>
+                <div class="day-header">Vendahs</div>
+                <div class="day-header">Endahs</div>
+
+                <!-- Days of the month -->
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <!-- Fill in the days up to 57 -->
+                <div class="day">57</div>
             </div>
             <div class="moon-phase">Moon Selanna (17-day cycle)</div>
         </div>
 
-        <!-- Month 3: Valkorath -->
-        <div class="month">
-            <h2>Valkorath (46 days)</h2>
-            <div class="days">
-                <!-- Similar structure for Valkorath -->
-                <div class="day">1 Valkorath</div>
-                <!-- Fill in the days up to 46 -->
-            </div>
-            <div class="moon-phase">Moon Selanna (17-day cycle)</div>
-        </div>
-
-        <!-- Month 4: Thalakar -->
-        <div class="month">
-            <h2>Thalakar (46 days)</h2>
-            <div class="days">
-                <!-- Similar structure for Thalakar -->
-                <div class="day">1 Thalakar</div>
-                <!-- Fill in the days up to 46 -->
-            </div>
-            <div class="moon-phase">Moon Selanna (17-day cycle)</div>
-        </div>
-
-        <!-- Month 5: Ravaryn -->
-        <div class="month">
-            <h2>Ravaryn (46 days)</h2>
-            <div class="days">
-                <!-- Similar structure for Ravaryn -->
-                <div class="day">1 Ravaryn</div>
-                <!-- Fill in the days up to 46 -->
-            </div>
-            <div class="moon-phase">Moon Selanna (17-day cycle)</div>
-        </div>
-
-        <!-- Month 6: Umbros -->
-        <div class="month">
-            <h2>Umbros (46 days)</h2>
-            <div class="days">
-                <!-- Similar structure for Umbros -->
-                <div class="day">1 Umbros</div>
-                <!-- Fill in the days up to 46 -->
-            </div>
-            <div class="moon-phase">Moon Selanna (17-day cycle)</div>
-        </div>
+        <!-- Continue the same structure for all other months -->
 
         <!-- Month 7: Skarneth -->
         <div class="month">
-            <h2>Skarneth (124 days)</h2>
+            <h2>Skarneth (58 days)</h2>
             <div class="days">
-                <!-- Similar structure for Skarneth -->
-                <div class="day">1 Skarneth</div>
-                <!-- Fill in the days up to 124 -->
+                <!-- Days of the week -->
+                <div class="day-header">Sundahs</div>
+                <div class="day-header">Morndahs</div>
+                <div class="day-header">Tundahs</div>
+                <div class="day-header">Wendahs</div>
+                <div class="day-header">Thirndahs</div>
+                <div class="day-header">Frendahs</div>
+                <div class="day-header">Brundahs</div>
+                <div class="day-header">Vendahs</div>
+                <div class="day-header">Endahs</div>
+
+                <!-- Days of the month -->
+                <div class="day">1</div>
+                <!-- Fill in the days up to 58 -->
+                <div class="day">58</div>
             </div>
             <div class="moon-phase">Moon Selanna (17-day cycle)</div>
         </div>
